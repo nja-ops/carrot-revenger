@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dits0fxfxyaf6"]
+
+[ext_resource type="Texture2D" uid="uid://dual30ho82b0m" path="res://rapid_fire_pickup.png" id="1_o67u2"]
+[ext_resource type="Script" uid="uid://decylc0srck7r" path="res://rapid_fire_pickup.gd" id="1_vcji4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vcji4"]
+radius = 15.0
+
+[node name="RapidFirePickup" type="Area2D" unique_id=1308354191]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_vcji4")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1522033982]
+scale = Vector2(3, 3)
+texture = ExtResource("1_o67u2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=889010985]
+scale = Vector2(3, 3)
+shape = SubResource("CircleShape2D_vcji4")

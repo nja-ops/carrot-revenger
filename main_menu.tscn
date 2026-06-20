@@ -1,0 +1,146 @@
+[gd_scene format=3 uid="uid://c5cwymacpy7hs"]
+
+[ext_resource type="Script" uid="uid://bslv2intsdai7" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://dkb6kiodb5wn8" path="res://9e034ea34bb25ba2ab03a6e60ac49df0.jpg" id="2_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://6vyknnjhrjun" path="res://logo.png" id="3_fu7sn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7vrkn"]
+bg_color = Color(0.8039216, 0.4862745, 0.62352943, 0.3764706)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fu7sn"]
+bg_color = Color(0.5176471, 0.23921569, 0.38431373, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_06t4h"]
+bg_color = Color(0.8784314, 0.5803922, 0.654902, 0.68235296)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jix8l"]
+bg_color = Color(0.8039216, 0.4862745, 0.62352943, 0.3764706)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nlkkf"]
+bg_color = Color(0.5176471, 0.23921569, 0.38431373, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8qtwp"]
+bg_color = Color(0.8784314, 0.5803922, 0.654902, 0.68235296)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glbon"]
+bg_color = Color(0.8039216, 0.4862745, 0.62352943, 0.3764706)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qe12f"]
+bg_color = Color(0.5176471, 0.23921569, 0.38431373, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dy7ct"]
+bg_color = Color(0.8784314, 0.5803922, 0.654902, 0.68235296)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0o4t1"]
+bg_color = Color(0.69411767, 0.6, 0.6, 1)
+
+[node name="MainMenu" type="Control" unique_id=1274101955]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2043645897]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_7vrkn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=398741318]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -140.0
+offset_right = 140.0
+offset_bottom = 220.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+
+[node name="StartButton" type="Button" parent="VBoxContainer" unique_id=784540653]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 0.78431374)
+theme_override_styles/normal = SubResource("StyleBoxFlat_7vrkn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fu7sn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_06t4h")
+text = "Igraj
+"
+
+[node name="InstructionsButton" type="Button" parent="VBoxContainer" unique_id=874930357]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_jix8l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nlkkf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8qtwp")
+text = "Uputstva"
+
+[node name="ExitButton" type="Button" parent="VBoxContainer" unique_id=661902341]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_glbon")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qe12f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dy7ct")
+text = "Izlaz"
+
+[node name="InstructionsPanel" type="Panel" parent="." unique_id=967003845]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="InstructionsPanel" unique_id=2133741961]
+layout_mode = 0
+offset_left = 673.0
+offset_top = 318.0
+offset_right = 1344.0
+offset_bottom = 765.0
+theme_override_font_sizes/font_size = 30
+text = "Ukradene su sargarepe... i cast...
+Dok sve vise i vise ulazis u nedodjiju..
+
+Na tebi je da ih pobijes sve i osvetis sargarepe!
+
+UPUTSTVA:
+WASD - kretanje
+Automatsko pucanje prema neprijatelju
+Skupljaj power-upove
+Prezivi sva 3 nivoa!"
+
+[node name="Button" type="Button" parent="InstructionsPanel" unique_id=1359048216]
+layout_mode = 0
+offset_left = 910.0
+offset_top = 809.0
+offset_right = 1045.0
+offset_bottom = 885.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_0o4t1")
+text = "Zatvori"
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=679462564]
+layout_mode = 0
+offset_left = 782.0
+offset_top = 101.0
+offset_right = 1105.0
+offset_bottom = 340.0
+texture = ExtResource("3_fu7sn")
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/InstructionsButton" to="." method="_on_instructions_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="InstructionsPanel/Button" to="." method="_on_button_pressed"]
