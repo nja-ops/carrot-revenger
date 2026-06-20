@@ -1,0 +1,42 @@
+Carrot Revenger
+
+A top-down pixel art survivor game built in Godot 4.6, where a bunny fights off waves of slimes to reclaim its carrot patch.
+
+Gameplay
+
+
+Movement: WASD / Arrow keys
+Combat: Auto-aim or directional shooting at enemies (survivor-style wave combat)
+Objective: Survive incoming waves of slimes, collect power-ups, and progress through levels
+
+
+Features
+
+
+Top-down pixel art visuals using the Tiny Dungeon tileset
+Wave-based slime enemies with progressively increasing difficulty
+Power-up system (e.g. rapid fire pickup) affecting gameplay mid-run
+Animated level transition screen between stages
+Main menu with lore and instructions panel
+Looping background music that persists across scene changes
+
+
+Tech Stack
+
+
+Engine: Godot 4.6
+Language: GDScript
+Art: Custom pixel art assets
+
+
+Project Structure
+
+
+player.gd / player.tscn — player character logic and scene
+mob.gd / mob.tscn — enemy (slime) behavior
+bullet_2d.gd / bullet_2d.tscn — projectile logic
+gun.gd / gun.tscn — weapon/shooting system
+rapid_fire_pickup.gd / rapid_fire_pickup.tscn — power-up pickup logic
+level_transition.gd / level_transition.tscn — animated transition between levels
+main_menu.gd / main_menu.tscn — main menu with lore and instructions
+game.gd — core game loop and state management
